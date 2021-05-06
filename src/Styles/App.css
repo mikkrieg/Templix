@@ -2,7 +2,20 @@
 
 /* For logo */
 .logo {
-  width: 25%;
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+
+/* For nav links */
+.nav-links {
+  color: #FFF  !important;
+  font-size: 1.2em;
+  margin: 10px;
+}
+
+.navbar-toggler {
+  margin-right: 20px;
 }
 
 /* ID'S */
@@ -10,4 +23,10 @@
 /* For navbar */
 #navbar {
   background-color: #1A1A1A;
+}
+
+#collapse-div {
+  justify-content: flex-end;
+  margin-right: 3%;
+  color: #FFF  !important;
 }
