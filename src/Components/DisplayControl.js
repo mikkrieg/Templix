@@ -18,28 +18,44 @@ export default class DisplayControl extends React.Component {
 
 
   handleAboutClick = () => {
-    if(this.state.aboutVisible === null) {
       this.setState({
-        formVisible: true,
-        homeVisible: false
+        aboutVisible: true,
+        homeVisible: false,
+        layoutsVisible: false
       })
-    }
   }
+
+  handleHomeClick = () => {
+    this.setState({
+      homeVisible: true,
+      aboutVisible: false,
+      layoutsVisible: false
+    })
+  }
+
+  handleLayoutsClick = () => {
+    this.setState({
+      layoutsVisible: true,
+      aboutVisible: false,
+      homeVisible: false
+    })
+  }
+
   render() {
     let currentlyVisibleState = null;
-    if(this.state.aboutVisible != false) {
+    if(this.state.aboutVisible !== false) {
       currentlyVisibleState = <About/>
 
-    } else if(this.state.layoutsVisible != false) {
+    } else if(this.state.layoutsVisible !== false) {
       currentlyVisibleState = <Layouts />
 
     } else {
-      currentlyVisibleState = <Home/>
+      currentlyVisibleState = <Home layoutClick={this.handleLayoutsClick}/>
 
     }
     return(
       <>
-        <Header/>
+        <Header aboutClick={this.handleAboutClick} homeClick={this.handleHomeClick} layoutClick={this.handleLayoutsClick}/>
         {currentlyVisibleState}
         <Footer/>
       </>

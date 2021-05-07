@@ -4,13 +4,13 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../Styles/Home.scss';
 
-export default function Home() {
+export default function Home(props) {
   return(
     <>
       <div className='background background--color-map'>
         <Container className='body-container'>
           <h1 className='fade-in'>Welcome</h1>
-          <Button className='background--color-map mt-5 text-color' variant='outline-dark' size='lg'>Browse Layouts</Button>
+          <Button  onClick={() => props.layoutClick()} className='background--color-map mt-5 text-color' variant='outline-dark' size='lg'>Browse Layouts</Button>
         </Container>
       </div>
     </>
