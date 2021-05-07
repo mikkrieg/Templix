@@ -1,8 +1,5 @@
-body {
-  padding-top: 100px;
-}
 
-/* Animation Stylings */
+// Animation Stylings 
 // Background global
 .background {
   height: 100vh;
@@ -26,7 +23,7 @@ $colormap: (
     five:  #f7ea83,
     
 );
-
+// SCSS
 /// Map deep get
 /// @author Hugo Giraudel
 /// @access public

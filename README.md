@@ -12,6 +12,7 @@
 * _React-Bootstrap_
 * _JSX_
 * _Visual Studio Code_
+* _SCSS_
 
 ## Description
 
