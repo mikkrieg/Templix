@@ -12,10 +12,10 @@ export default function About() {
     <>
       <Container className='about-container'>
         <Row>
-          <Col>
+          <Col lg={6}>
             <Image src={Mikey} id="creator-image"></Image>
           </Col>
-          <Col>
+          <Col lg={6}>
             <p className="lower">Thanks for taking some time to learn more about me! I am an aspiring Software Developer with a focus on Front-End Development. This project is my capstone for Epicodus Coding Bootcamp.</p>
             <div className="border-div"></div>
             <p>
@@ -23,7 +23,7 @@ export default function About() {
             </p>
             <div className="border-div"></div>
             <p>
-            Now that I have graduated, I would like start a career in web design. This website was created with the focus of presenting my work; ranging from the website itself, curricular work and my own personal projects.
+            Upon graduating Epicodus, I would like begin a career in Front-End Development. This website was built with React, JSX, CSS, SCSS and React-Bootstrap
             </p>
           </Col>
         </Row>

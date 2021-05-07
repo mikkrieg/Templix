@@ -12,7 +12,7 @@ p {
 }
 
 .lower {
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
 .border-div {
@@ -25,4 +25,18 @@ p {
   border-radius: 10%;
 }
 
+@media only screen and (max-width: 1300px) {
+  p {
+    font-weight: 400;
+  }
+
+  .lower {
+    margin-top: -3%;
+  }
+
+  #creator-image {
+    width: 80%;
+    border-radius: 10%;
+  }
+}
 
