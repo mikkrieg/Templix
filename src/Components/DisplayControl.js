@@ -9,7 +9,18 @@ export default class DisplayControl extends React.Component {
     super(props)
     this.state = {
       aboutVisible: false,
-      layoutsVisible: false
+      layoutsVisible: false,
+      homeVisible: true,
+    }
+  }
+
+
+  handleAboutClick = () => {
+    if(this.state.aboutVisible === null) {
+      this.setState({
+        formVisible: true,
+        homeVisible: false
+      })
     }
   }
   render() {
