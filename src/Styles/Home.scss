@@ -12,17 +12,19 @@ body {
 
 // CSS only animate color mapping
 .background--color-map {
-  animation-duration: 40s;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
   animation-name: animation-colors; 
   animation-timing-function: linear; 
 }
 
 $colormap: (
-    one:   #f55683,
-    two:   #6d5bf5,
-    three: #2a84ff,
-    four:  #ffe32a,
+    one:   #ed7b9c,
+    two:   #8d81eb,
+    three: #71aafa,
+    four:  #aecfb0,
+    five:  #f7ea83,
+    
 );
 
 /// Map deep get
@@ -42,14 +44,17 @@ $colormap: (
   0% {
     background-color: map-reach($colormap, one); 
   }
-  25% {
+  20% {
     background-color: map-reach($colormap, two); 
   }
-  50% {
+  40% {
     background-color: map-reach($colormap, three);
   }
-  75% {
+  60% {
     background-color: map-reach($colormap, four);
+  }
+  80% {
+    background-color: map-reach($colormap, five);
   }
   100% {
     background-color: map-reach($colormap, one);
