@@ -27,6 +27,7 @@
 /* For navbar */
 #navbar {
   background-color: #1A1A1A;
+  position: fixed;
 }
 
 #collapse-div {

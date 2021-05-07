@@ -1,6 +1,13 @@
 
+// Home Styling
+
+.body-container {
+  padding-top: 6%;
+}
+
 // Animation Stylings 
 // Background global
+
 .background {
   height: 100vh;
   width:   100%;
@@ -23,13 +30,16 @@ $colormap: (
     five:  #f7ea83,
     
 );
+
 // SCSS
 /// Map deep get
+
 /// @author Hugo Giraudel
 /// @access public
 /// @param {Map} $map - Map
 /// @param {Arglist} $keys - Key chain
 /// @return {*} - Desired value
+
 @function map-reach($map, $keys...) {
   @each $key in $keys {
     $map: map-get($map, $key);
