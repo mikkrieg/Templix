@@ -4,14 +4,18 @@
 .logo {
   width: 100%;
   height: auto;
-  max-width: 200px;
+  max-width: 275px;
 }
 
 /* For nav links */
 .nav-links {
-  color: #FFF  !important;
+  color: #FFF !important;
   font-size: 1.2em;
   margin: 10px;
+}
+
+.nav-links:hover {
+  color: #989898 !important;
 }
 
 .navbar-toggler {
