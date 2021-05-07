@@ -1,9 +1,6 @@
-body {
-  background-color: #71aafa;
-}
-
 p {
   font-weight: 600;
+  animation: fade 2s ease-in;
 }
 
 .about-container {
@@ -18,11 +15,13 @@ p {
 .border-div {
   border-bottom: 2px solid #000;
   margin: 2% 40% 2% 40%;
+  animation: fade 2s ease-in;
 }
 
 #creator-image {
   width: 100%;
   border-radius: 10%;
+  animation: fade 2s ease-in;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -37,6 +36,7 @@ p {
   #creator-image {
     width: 80%;
     border-radius: 10%;
+    margin-bottom: 5%;
   }
 }
 

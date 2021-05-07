@@ -10,6 +10,7 @@ import './../Styles/About.css';
 export default function About() {
   return(
     <>
+    <div className='background background--color-map'>
       <Container className='about-container'>
         <Row>
           <Col lg={6}>
@@ -26,9 +27,9 @@ export default function About() {
             Upon graduating Epicodus, I would like begin a career in Front-End Development. This website was built with React, JSX, CSS, SCSS and React-Bootstrap
             </p>
           </Col>
-        </Row>
-        
+        </Row>  
       </Container>
+      </div>
     </>
   )
 }
