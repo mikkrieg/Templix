@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import logo from './../img/logo.png';
+import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../Styles/Header.css';
 
@@ -30,6 +31,12 @@ function Header(props) {
       
     </>
   )
+}
+
+Header.propTypes = {
+  homeClick: PropTypes.func,
+  aboutClick: PropTypes.func,
+  layoutClick: PropTypes.func
 }
 
 export default Header;
