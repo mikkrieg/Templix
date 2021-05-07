@@ -34,3 +34,7 @@ Copyright(c) 2021 Michael Kriegel
 ## Contact Information
 
 Michael Kriegel: mikkrieg@gmail.com
+
+## Acknowledgements
+
+CSS Background Animation: Hugo Giraudel
