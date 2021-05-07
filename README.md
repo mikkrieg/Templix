@@ -1,10 +1,4 @@
-#
-
-
-
-
-
-# _Project name: Templix_
+## _Project name: Templix UI Templates_
 
 #### _A website that provides UI templates that can be downloaded and implemented_
 
@@ -14,23 +8,21 @@
 
 ## Technologies Used
 
-* __
-* __
+* _React_
+* _React-Bootstrap_
+* _JSX_
+* _Visual Studio Code_
 
 ## Description
 
-__
+_The current plan for this website is to provide UI templates. The MVP is to have the main site completed and one template available. This includes the splash page, the about me page, and the layouts page. On the layouts page there will be one template available. Users will be able to view the template, get some information about what the template is built with, file size, Creator, instructions on necessary tools to use template, etc. Then users will be able to download the template and implement the template in their own projects. The templates on the website will be completely static, any customization will be done offline by users themselves. Since the download will just be the static template, users will recieve instructions on what packages, libraries and frameworks are required to be able to use the template._
 
 ## Setup/Installation Requirements
-
-### Local Machine
-* _Clone this repository to your machine_
-* _Navigate to the top level directory_
-* _Open index.html in your browser_
+* _TBD upon project completion_
 
 ## Known Bugs
 
-* __
+* _None Yet_
 
 ## License
 
