@@ -1,12 +1,11 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import logo from './../img/logo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './../Styles/App.css';
+import './../Styles/Header.css';
 
 function Header(props) {
   return (
