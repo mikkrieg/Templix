@@ -1,0 +1,98 @@
+p {
+  font-weight: 600;
+}
+
+body {
+  overflow: hidden;
+}
+
+.about-container {
+  padding-top: 13%;
+  text-align: center;
+}
+
+.lower {
+  margin-top: 8%;
+}
+
+.border-div {
+  border-bottom: 2px solid #000;
+  margin: 2% 40% 2% 40%;
+  animation: fade 2s ease-in;
+}
+
+#creator-image {
+  width: 100%;
+  border-radius: 10%;
+  animation: fade 3s ease-in;
+}
+
+/* Paragraph animations */
+.p1 {
+  animation: p1Slide 1s ease-in;
+  animation-timing-function: cubic-bezier(0.280, 0.240, 0.520, 1);
+}
+
+.d1 {
+  animation: d1Slide 2s ease-in;
+  animation-timing-function: cubic-bezier(0.280, 0.240, 0.520, 1);
+}
+
+.p2 {
+  animation: p2Slide 2s ease-in;
+  animation-timing-function: cubic-bezier(0.280, 0.240, 0.520, 1);
+}
+
+.d2 {
+  animation: d2Slide 3s ease-in;
+  animation-timing-function: cubic-bezier(0.280, 0.240, 0.520, 1);
+}
+
+.p3 {
+  animation: p3Slide 3s ease-in;
+  animation-timing-function: cubic-bezier(0.280, 0.240, 0.520, 1);
+} 
+
+@keyframes p1Slide {
+  0% {margin-top: 100%;}
+  100% {margin-top: 8%;}
+}
+
+@keyframes d1Slide {
+  0% {margin-top: 100%}
+  100% {margin-top: 2%}
+}
+
+@keyframes p2Slide {
+  0% {margin-top: 100%}
+  100% {margin-top: 0%}
+}
+
+@keyframes d2Slide {
+  0% {margin-top: 100%}
+  100% {margin-top: 2%}
+}
+
+@keyframes p3Slide {
+  0% {margin-top: 100%}
+  100% {margin-top: 0%}
+}
+
+@media only screen and (max-width: 1300px) {
+  p {
+    font-weight: 400;
+  }
+
+  .lower {
+    margin-top: -3%;
+  }
+
+  #creator-image {
+    width: 80%;
+    border-radius: 10%;
+    margin-bottom: 5%;
+  }
+}
+
+
+
