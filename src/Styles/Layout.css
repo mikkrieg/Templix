@@ -8,3 +8,11 @@
   font-size: 1.1em;
   background-color: transparent;
 }
+
+.card-styles {
+  border: none;
+}
+
+.card-styles:hover {
+  transform: scale(1.02);
+}
