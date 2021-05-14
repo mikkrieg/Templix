@@ -10,7 +10,7 @@ import logo from '../img/logo.png'
 
 export default function Layouts() {
   const { setLayout1, setLayout2, setLayout3, setLayoutsVisible  } = useContext(AppContext);
-  
+
   function handleCard1Click() {
     setLayout1(true);
     setLayout2(false);
@@ -51,7 +51,7 @@ export default function Layouts() {
           <Card onClick={() => handleCard2Click()} className="card-styles" id="card-2">
               <Card.Img variant="top" src={logo}/>
               <Card.Body>
-                <Card.Title>Layout 1</Card.Title>
+                <Card.Title>Layout 2</Card.Title>
                 <Card.Text className="card-text">lorem ipsum about this layout its completley random placeholder txt bruh</Card.Text>
               </Card.Body>
             </Card>
@@ -60,7 +60,7 @@ export default function Layouts() {
           <Card onClick={() => handleCard3Click()} className="card-styles" id="card-3">
               <Card.Img variant="top" src={logo}/>
               <Card.Body>
-                <Card.Title>Layout 1</Card.Title>
+                <Card.Title>Layout 3</Card.Title>
                 <Card.Text className="card-text">lorem ipsum about this layout its completley random placeholder txt bruh</Card.Text>
               </Card.Body>
             </Card>
