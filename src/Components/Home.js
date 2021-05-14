@@ -7,6 +7,7 @@ import {AppContext} from './../AppContext';
 
 export default function Home() {
   const {layoutsVisible, setLayoutsVisible, setHomeVisible, setAboutVisible} = useContext(AppContext);
+  
   function handleLayoutsClick() {
     if(layoutsVisible === false) {
       setLayoutsVisible(true);
