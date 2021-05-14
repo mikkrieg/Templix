@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Home from './Home';
 import About from './About';
 import Header from './Header';
@@ -7,68 +7,40 @@ import Layouts from './Layouts';
 import Layout1 from './Layout1';
 import Layout2 from './Layout2';
 import Layout3 from './Layout3';
+import { AppContext } from '../AppContext';
 
-export default class DisplayControl extends React.Component {
+export default function DisplayControl() {
+  const { 
+    aboutVisible,  
+    layoutsVisible, 
+    layout1,
+    setLayout1,
+    layout2,
+    setLayout2,
+    layout3,
+    setLayout3 } = useContext(AppContext);
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      aboutVisible: false,
-      layoutsVisible: false,
-      homeVisible: true,
-      layout1Visible: false,
-      layout2Visible: false,
-      layout3Visible: false
-    }
-  }
-
-
-  handleAboutClick = () => {
-      this.setState({
-        aboutVisible: true,
-        homeVisible: false,
-        layoutsVisible: false
-      })
-  }
-
-  handleHomeClick = () => {
-    this.setState({
-      homeVisible: true,
-      aboutVisible: false,
-      layoutsVisible: false
-    })
-  }
-
-  handleLayoutsClick = () => {
-    this.setState({
-      layoutsVisible: true,
-      aboutVisible: false,
-      homeVisible: false
-    })
-  }
-
-  render() {
     let currentlyVisibleState = null;
-    if(this.state.aboutVisible !== false) {
+
+    if(aboutVisible !== false) {
       currentlyVisibleState = <About/>
-    } else if(this.state.layoutsVisible !== false) {
+    } else if(layoutsVisible !== false) {
       currentlyVisibleState = <Layouts />
-      if(this.state.layout1Visible !== false) {
+      if(layout1 !== false) {
         currentlyVisibleState = <Layout1 />
-      } else if(this.state.layout2Visible !== false) {
+      } else if(layout2 !== false) {
         currentlyVisibleState = <Layout2 />
-      } else if(this.state.layout3Visible !== false) {
+      } else if(layout3 !== false) {
         currentlyVisibleState = <Layout3 />
       }
     } else {
-      currentlyVisibleState = <Home layoutClick={this.handleLayoutsClick}/>
+      currentlyVisibleState = <Home/>
     }
     return(
       <>
-        <Header aboutClick={this.handleAboutClick} homeClick={this.handleHomeClick} layoutClick={this.handleLayoutsClick}/>
+        <Header/>
         {currentlyVisibleState}
         <Footer/>
       </>
     )
   }
-} 
