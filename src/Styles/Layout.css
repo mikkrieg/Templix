@@ -11,8 +11,34 @@
 
 .card-styles {
   border: none;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 
 .card-styles:hover {
   transform: scale(1.02);
+}
+
+.layout-info {
+  animation: fade 1.5s ease-in;
+}
+
+#card-1 {
+  animation: move 1s ease-in,  fade 3s ease-in;
+  animation-timing-function: cubic-bezier(.54,.35,.41,1.03);
+}
+
+#card-2 {
+  animation: move 1.5s ease-in, fade 3s ease-in;
+  animation-timing-function: cubic-bezier(.54,.35,.41,1.03);
+}
+
+#card-3 {
+  animation: move 2s ease-in, fade 3s ease-in;
+  animation-timing-function: cubic-bezier(.54,.35,.41,1.03);
+}
+
+@keyframes move {
+  0%{margin-top: 135%}
+  100%{margin-top: 0%}
 }

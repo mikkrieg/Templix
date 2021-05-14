@@ -11,7 +11,7 @@ export default function Layouts() {
   return(
     <div className='background background--color-map'>
       <Container className='layout-container'>
-        <Row>
+        <Row className="layout-info">
           <h1>Layouts</h1>
           <h5 className="mt-3">Select a layout to view it</h5>
           <h5>Click the back button to return to this page, or the link in the navbar</h5>
@@ -19,7 +19,7 @@ export default function Layouts() {
         </Row>
         <Row className="mt-5" style={{margin: "auto"}}>
           <Col lg={4}>
-            <Card className="card-styles">
+            <Card className="card-styles" id="card-1">
               <Card.Img variant="top" src={logo}/>
               <Card.Body>
                 <Card.Title>Layout 1</Card.Title>
@@ -28,7 +28,7 @@ export default function Layouts() {
             </Card>
           </Col>
           <Col lg={4}>
-          <Card className="card-styles">
+          <Card className="card-styles" id="card-2">
               <Card.Img variant="top" src={logo}/>
               <Card.Body>
                 <Card.Title>Layout 1</Card.Title>
@@ -37,7 +37,7 @@ export default function Layouts() {
             </Card>
           </Col>
           <Col lg={4}>
-          <Card className="card-styles">
+          <Card className="card-styles" id="card-3">
               <Card.Img variant="top" src={logo}/>
               <Card.Body>
                 <Card.Title>Layout 1</Card.Title>
