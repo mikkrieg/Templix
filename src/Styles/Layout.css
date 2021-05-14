@@ -1,0 +1,10 @@
+.layout-container {
+  padding-top: 8%;
+  text-align: center;
+}
+
+.mark {
+  font-weight: bolder;
+  font-size: 1.1em;
+  background-color: transparent;
+}
