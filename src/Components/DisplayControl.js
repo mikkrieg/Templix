@@ -45,13 +45,10 @@ export default class DisplayControl extends React.Component {
     let currentlyVisibleState = null;
     if(this.state.aboutVisible !== false) {
       currentlyVisibleState = <About/>
-
     } else if(this.state.layoutsVisible !== false) {
       currentlyVisibleState = <Layouts />
-
     } else {
       currentlyVisibleState = <Home layoutClick={this.handleLayoutsClick}/>
-
     }
     return(
       <>
