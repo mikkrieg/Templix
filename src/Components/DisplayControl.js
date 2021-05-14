@@ -15,11 +15,8 @@ export default function DisplayControl() {
     setAnimation1,  
     layoutsVisible, 
     layout1,
-    setLayout1,
     layout2,
-    setLayout2,
-    layout3,
-    setLayout3 } = useContext(AppContext);
+    layout3 } = useContext(AppContext);
 
     let currentlyVisibleState = null;
 
@@ -27,17 +24,17 @@ export default function DisplayControl() {
       currentlyVisibleState = <About/>
     } else if(layoutsVisible !== false) {
       currentlyVisibleState = <Layouts />
-      if(layout1 !== false) {
-        currentlyVisibleState = <Layout1 />
-      } else if(layout2 !== false) {
-        currentlyVisibleState = <Layout2 />
-      } else if(layout3 !== false) {
-        currentlyVisibleState = <Layout3 />
-      }
+    } else if(layout1 !== false) {
+      currentlyVisibleState = <Layout1 />
+    } else if(layout2 !== false) {
+      currentlyVisibleState = <Layout2 />
+    } else if(layout3 !== false) {
+      currentlyVisibleState = <Layout3 />
     } else {
-      currentlyVisibleState = <Home/>
-      setAnimation1(false);
+    currentlyVisibleState = <Home/>
+    setAnimation1(false);
     }
+    console.log(currentlyVisibleState);
     return(
       <>
         <Header/>
