@@ -21,7 +21,10 @@ function Header() {
     animation3,
     setAnimation1,
     setAnimation2,
-    setAnimation3 } = useContext(AppContext)
+    setAnimation3,
+    setLayout1,
+    setLayout2,
+    setLayout3 } = useContext(AppContext)
 
   function handleAboutClick() {
     if(aboutVisible === false){
@@ -30,6 +33,9 @@ function Header() {
       setLayoutsVisible(false)
       setAnimation2(true);
       setAnimation1(true);
+      setLayout1(false)
+      setLayout2(false)
+      setLayout3(false)
     }
   }
 
@@ -39,6 +45,9 @@ function Header() {
       setAboutVisible(false)
       setLayoutsVisible(false)
       setAnimation1(true);
+      setLayout1(false)
+      setLayout2(false)
+      setLayout3(false)
     }
   }
 
@@ -51,7 +60,7 @@ function Header() {
       setAnimation1(true);
     }
   }
-  console.log(animation1, animation2, animation3)
+
   return (
     <>
     <Container>

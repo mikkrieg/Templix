@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {AppContext} from './../AppContext';
 
 export default function Layout1() {
   return(
