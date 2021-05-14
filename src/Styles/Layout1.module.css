@@ -1,0 +1,23 @@
+.layout-1-nav {
+  color: #FFF;
+}
+
+.layout-toggle {
+  margin-right: 0px;
+}
+
+.layout-collapse {
+  justify-content: flex-end;
+  color: #FFF  !important;
+}
+
+.layout-navs:hover {
+  color: #989898 !important;
+}
+
+.layout-background {
+  background-image: url(./../img/Forest.jpg);
+  height: 100vh;
+  width:   100vw;
+  position: relative; 
+}
