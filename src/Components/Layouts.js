@@ -12,7 +12,6 @@ export default function Layouts() {
     <div className='background background--color-map'>
       <Container className='layout-container'>
         <Row className="layout-info">
-          <h1>Layouts</h1>
           <p className="layout-p">When viewing a layout, select the<span className="mark">"?"</span> for instructions and specifications</p>
         </Row>
         <Row className="mt-5 card-row">
