@@ -4,6 +4,9 @@ import About from './About';
 import Header from './Header';
 import Footer from './Footer';
 import Layouts from './Layouts';
+import Layout1 from './Layout1';
+import Layout2 from './Layout2';
+import Layout3 from './Layout3';
 
 export default class DisplayControl extends React.Component {
 
@@ -13,6 +16,9 @@ export default class DisplayControl extends React.Component {
       aboutVisible: false,
       layoutsVisible: false,
       homeVisible: true,
+      layout1Visible: false,
+      layout2Visible: false,
+      layout3Visible: false
     }
   }
 
@@ -47,6 +53,13 @@ export default class DisplayControl extends React.Component {
       currentlyVisibleState = <About/>
     } else if(this.state.layoutsVisible !== false) {
       currentlyVisibleState = <Layouts />
+      if(this.state.layout1Visible !== false) {
+        currentlyVisibleState = <Layout1 />
+      } else if(this.state.layout2Visible !== false) {
+        currentlyVisibleState = <Layout2 />
+      } else if(this.state.layout3Visible !== false) {
+        currentlyVisibleState = <Layout3 />
+      }
     } else {
       currentlyVisibleState = <Home layoutClick={this.handleLayoutsClick}/>
     }
