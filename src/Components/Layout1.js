@@ -1,29 +1,25 @@
-import React, {useContext} from 'react';
-import {AppContext} from './../AppContext';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import './../Styles/Layout1.css'
+import styles from './../Styles/Layout1.module.css'
 
 export default function Layout1() {
   return(
-    <div>
-      <Container className="layout-1-container">
-        <Navbar collapseOnSelect expand='md' fixed='top' id='navbar' className="navbar-dark">
-          <Navbar.Brand>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
-          <Navbar.Collapse id='responsive-navbar-nav' id="collapse-div">
-            <Nav id='nav-alignment'>
-              <Nav.Link>Home</Nav.Link>
-              <Nav.Link>About</Nav.Link>
-              <Nav.Link>Layouts</Nav.Link>
-              <Nav.Link>Sign up</Nav.Link>
-              <Nav.Link>Login</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </Container>
+    <div className={styles['layout-background']}>
+    <Container className={styles['layout-container']}>
+      <Navbar collapseOnSelect expand='md' className={`${styles['navbar-light']} ${styles['layout-1-nav']}`}>
+        <Navbar.Brand>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls='responsive-navbar-nav' className={styles['layout-toggle']}/>
+        <Navbar.Collapse id='responsive-navbar-nav' className={styles['layout-collapse']}>
+          <Nav>
+            <Nav.Link className={styles['layout-navs']}>Link 1</Nav.Link>
+            <Nav.Link className={styles['layout-navs']}>Link 2</Nav.Link>
+            <Nav.Link className={styles['layout-navs']}>Link 3</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </Container>
     </div>
   )
 }

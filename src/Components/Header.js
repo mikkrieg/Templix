@@ -74,8 +74,8 @@ function Header() {
             <Nav.Link onClick={() => handleHomeClick()} className={homeVisible ? 'active' : animation1 ? "reduce" : ""}>Home</Nav.Link>
             <Nav.Link onClick={() => handleAboutClick()} className={aboutVisible ? 'active' : animation2 ? "reduce" : ""}>About</Nav.Link>
             <Nav.Link onClick={() => handleLayoutsClick()} className={layoutsVisible ? 'active' : animation3 ? "reduce" : ""}>Layouts</Nav.Link>
-            <Nav.Link className='nav-links'>Sign up</Nav.Link>
-            <Nav.Link className='nav-links'>Login</Nav.Link>
+            <Nav.Link className='nav-link'>Sign up</Nav.Link>
+            <Nav.Link className='nav-link'>Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
