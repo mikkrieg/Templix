@@ -44,9 +44,9 @@ function Header() {
         <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
         <Navbar.Collapse id='responsive-navbar-nav' id="collapse-div">
           <Nav id='nav-alignment'>
-            <Nav.Link onClick={() => handleHomeClick()} className={homeVisible ? 'active' : ''}>Home</Nav.Link>
-            <Nav.Link onClick={() => handleAboutClick()} className={aboutVisible ? 'active' : ''}>About</Nav.Link>
-            <Nav.Link onClick={() => handleLayoutsClick()} className={layoutsVisible ? 'active' : ''}>Layouts</Nav.Link>
+            <Nav.Link onClick={() => handleHomeClick()} className={homeVisible ? 'active' : 'reduce'}>Home</Nav.Link>
+            <Nav.Link onClick={() => handleAboutClick()} className={aboutVisible ? 'active' : 'reduce'}>About</Nav.Link>
+            <Nav.Link onClick={() => handleLayoutsClick()} className={layoutsVisible ? 'active' : 'reduce'}>Layouts</Nav.Link>
             <Nav.Link className='nav-links'>Sign up</Nav.Link>
             <Nav.Link className='nav-links'>Login</Nav.Link>
           </Nav>
