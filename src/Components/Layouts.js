@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function Layouts() {
   return(
-    <h1>Hello</h1>
+    <div className='background background--color-map'>
+      </div>
   )
 }
