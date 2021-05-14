@@ -13,17 +13,15 @@ export default function Layouts() {
       <Container className='layout-container'>
         <Row className="layout-info">
           <h1>Layouts</h1>
-          <h5 className="mt-3">Select a layout to view it</h5>
-          <h5>Click the back button to return to this page, or the link in the navbar</h5>
-          <h5>When viewing a layout, select the<span className="mark">"?"</span> for instructions and specifications</h5>
+          <p className="layout-p">When viewing a layout, select the<span className="mark">"?"</span> for instructions and specifications</p>
         </Row>
-        <Row className="mt-5" style={{margin: "auto"}}>
+        <Row className="mt-5 card-row">
           <Col lg={4}>
             <Card className="card-styles" id="card-1">
               <Card.Img variant="top" src={logo}/>
               <Card.Body>
                 <Card.Title>Layout 1</Card.Title>
-                <Card.Text>lorem ipsum about this layout its completley random placeholder txt bruh</Card.Text>
+                <Card.Text className="card-text">lorem ipsum about this layout its completley random placeholder txt bruh</Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -32,7 +30,7 @@ export default function Layouts() {
               <Card.Img variant="top" src={logo}/>
               <Card.Body>
                 <Card.Title>Layout 1</Card.Title>
-                <Card.Text>lorem ipsum about this layout its completley random placeholder txt bruh</Card.Text>
+                <Card.Text className="card-text">lorem ipsum about this layout its completley random placeholder txt bruh</Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -41,7 +39,7 @@ export default function Layouts() {
               <Card.Img variant="top" src={logo}/>
               <Card.Body>
                 <Card.Title>Layout 1</Card.Title>
-                <Card.Text>lorem ipsum about this layout its completley random placeholder txt bruh</Card.Text>
+                <Card.Text className="card-text">lorem ipsum about this layout its completley random placeholder txt bruh</Card.Text>
               </Card.Body>
             </Card>
           </Col>

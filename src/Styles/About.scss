@@ -81,6 +81,7 @@ body {
 @media only screen and (max-width: 1300px) {
   p {
     font-weight: 400;
+    font-size: 0.95em;
   }
 
   .lower {
@@ -90,7 +91,32 @@ body {
   #creator-image {
     width: 80%;
     border-radius: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+  }
+
+  @keyframes p1Slide {
+    0% {margin-top: 100%;}
+    100% {margin-top: -3%;}
+  }
+  
+  @keyframes d1Slide {
+    0% {margin-top: 100%}
+    100% {margin-top: 2%}
+  }
+  
+  @keyframes p2Slide {
+    0% {margin-top: 100%}
+    100% {margin-top: 0%}
+  }
+  
+  @keyframes d2Slide {
+    0% {margin-top: 100%}
+    100% {margin-top: 2%}
+  }
+  
+  @keyframes p3Slide {
+    0% {margin-top: 100%}
+    100% {margin-top: 1%}
   }
 }
 
