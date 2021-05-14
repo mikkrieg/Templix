@@ -11,7 +11,8 @@ import { AppContext } from '../AppContext';
 
 export default function DisplayControl() {
   const { 
-    aboutVisible,  
+    aboutVisible,
+    setAnimation1,  
     layoutsVisible, 
     layout1,
     setLayout1,
@@ -35,6 +36,7 @@ export default function DisplayControl() {
       }
     } else {
       currentlyVisibleState = <Home/>
+      setAnimation1(false);
     }
     return(
       <>

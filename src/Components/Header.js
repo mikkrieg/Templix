@@ -4,18 +4,32 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import logo from './../img/logo.png';
-import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {AppContext} from './../AppContext';
 import './../Styles/Header.css';
 
 function Header() {
-  const {aboutVisible, setAboutVisible, homeVisible, setHomeVisible, layoutsVisible, setLayoutsVisible} = useContext(AppContext)
+  const {
+    aboutVisible, 
+    setAboutVisible, 
+    homeVisible, 
+    setHomeVisible, 
+    layoutsVisible, 
+    setLayoutsVisible, 
+    animation1, 
+    animation2,
+    animation3,
+    setAnimation1,
+    setAnimation2,
+    setAnimation3 } = useContext(AppContext)
+
   function handleAboutClick() {
     if(aboutVisible === false){
       setAboutVisible(true);
       setHomeVisible(false)
       setLayoutsVisible(false)
+      setAnimation2(true);
+      setAnimation1(true);
     }
   }
 
@@ -24,6 +38,7 @@ function Header() {
       setHomeVisible(true);
       setAboutVisible(false)
       setLayoutsVisible(false)
+      setAnimation1(true);
     }
   }
 
@@ -32,8 +47,11 @@ function Header() {
       setLayoutsVisible(true);
       setHomeVisible(false)
       setAboutVisible(false)
+      setAnimation3(true);
+      setAnimation1(true);
     }
   }
+  console.log(animation1, animation2, animation3)
   return (
     <>
     <Container>
@@ -44,9 +62,9 @@ function Header() {
         <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
         <Navbar.Collapse id='responsive-navbar-nav' id="collapse-div">
           <Nav id='nav-alignment'>
-            <Nav.Link onClick={() => handleHomeClick()} className={homeVisible ? 'active' : 'reduce'}>Home</Nav.Link>
-            <Nav.Link onClick={() => handleAboutClick()} className={aboutVisible ? 'active' : 'reduce'}>About</Nav.Link>
-            <Nav.Link onClick={() => handleLayoutsClick()} className={layoutsVisible ? 'active' : 'reduce'}>Layouts</Nav.Link>
+            <Nav.Link onClick={() => handleHomeClick()} className={homeVisible ? 'active' : animation1 ? "reduce" : ""}>Home</Nav.Link>
+            <Nav.Link onClick={() => handleAboutClick()} className={aboutVisible ? 'active' : animation2 ? "reduce" : ""}>About</Nav.Link>
+            <Nav.Link onClick={() => handleLayoutsClick()} className={layoutsVisible ? 'active' : animation3 ? "reduce" : ""}>Layouts</Nav.Link>
             <Nav.Link className='nav-links'>Sign up</Nav.Link>
             <Nav.Link className='nav-links'>Login</Nav.Link>
           </Nav>
