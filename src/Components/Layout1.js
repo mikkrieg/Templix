@@ -7,7 +7,7 @@ export default function Layout1() {
   return(
     <div className={styles['layout-background']}>
     <Container className={styles['layout-container']}>
-      <Navbar collapseOnSelect expand='md' className={`${styles['navbar-light']} ${styles['layout-1-nav']}`}>
+      <Navbar collapseOnSelect expand='md' className={styles['layout-1-nav']}>
         <Navbar.Brand>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' className={styles['layout-toggle']}/>
@@ -19,6 +19,10 @@ export default function Layout1() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      <body className={styles['layout-body']}>
+        <h1 className={styles['layout-heading']}>Hello</h1>
+        <footer className={styles['footer-position']}>&copy;2021</footer>
+      </body>
     </Container>
     </div>
   )

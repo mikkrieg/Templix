@@ -21,6 +21,7 @@ export default function DisplayControl() {
     let currentlyVisibleState = null;
     let headerVisible = null;
     let footerVisible = null;
+    
     if(aboutVisible !== false) {
       currentlyVisibleState = <About/>
       headerVisible = <Header/>

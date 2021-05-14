@@ -1,9 +1,18 @@
+/* Navbar stylings in order of elements on page*/
+
 .layout-1-nav {
   color: #FFF;
+  position: fixed;
 }
 
 .layout-toggle {
-  margin-right: 0px;
+  margin-top: 15px;
+  background-color: #FFF;
+  justify-content: flex-end;
+}
+
+.layout-toggle:active {
+  box-shadow: none;
 }
 
 .layout-collapse {
@@ -11,13 +20,36 @@
   color: #FFF  !important;
 }
 
-.layout-navs:hover {
-  color: #989898 !important;
-}
 
+/* Body stylings in order of elements on page */
 .layout-background {
   background-image: url(./../img/Forest.jpg);
   height: 100vh;
   width:   100vw;
   position: relative; 
 }
+
+.layout-body {
+  background-color: transparent;
+  color: #FFF;
+}
+
+.layout-heading {
+  margin-top: 40%;
+  text-align: center;
+}
+
+.footer-position {
+  bottom: 2px;  
+  height: 40px;  
+  margin-top: 40px;  
+  text-align: center;  
+  vertical-align: middle; 
+  position: fixed;
+  width: 100%;
+  font-weight: bold;
+  color: #FFF;
+}
+
+
+
