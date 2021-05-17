@@ -12,6 +12,7 @@ export const AppProvider = ({children}) => {
     const [animation1, setAnimation1] = useState(null);
     const [animation2, setAnimation2] = useState(null);
     const [animation3, setAnimation3] = useState(null);
+    const [modalShow, setModalShow] = useState(false);
 
 
   return (
@@ -34,7 +35,9 @@ export const AppProvider = ({children}) => {
       layout2,
       setLayout2,
       layout3,
-      setLayout3
+      setLayout3,
+      modalShow,
+      setModalShow
       }}
     >
       {children}
