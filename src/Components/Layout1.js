@@ -1,29 +1,24 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import styles from './../Styles/Layout1.module.css'
 import Button from 'react-bootstrap/Button';
 
-// The two imports below can be deleted on download
-import {useContext} from 'react'
-import {AppContext} from './../AppContext';
+// These imports can be removed on download
+import Modal from './Modal1';
+import {AppContext} from './../AppContext'; 
 
-export default function Layout1() {
-  // This function and state hook can be deleted on download
-  const {setLayoutsVisible, setLayout1} = useContext(AppContext);
-  function handleBackClick() {
-    setLayoutsVisible(true);
-    setLayout1(false);
-  }
-
+// props parameter can be removed on download 
+export default function Layout1(props) {
+  const {modalShow, setModalShow} = useContext(AppContext);
   return(
     <div className={styles['layout-background']}>
     <Container className={styles['layout-container']}>
       <Navbar collapseOnSelect expand='md' className={styles['layout-1-nav']} fixed='top'>
         <Navbar.Brand>
           {/* This button can be deleted on download and replaced with a logo */}
-          <Button className={styles['button-styling']}onClick={() => handleBackClick()}>Go Back</Button>
+          <Button className={styles['button-styling']}onClick={() => props.handleBackClick()}>Go Back</Button>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' className={styles['layout-toggle']}/>
         <Navbar.Collapse id='responsive-navbar-nav' className={styles['layout-collapse']}>
@@ -38,6 +33,20 @@ export default function Layout1() {
         <h1 className={styles['layout-heading']}>Hello</h1>
         <footer className={styles['footer-position']}>&copy;2021</footer>
       </body>
+      {/* The button and modal below can be removed on download */}
+      <Button onClick={() => {setModalShow(true)}}>Launch modal</Button>
+      <Modal 
+      show={modalShow} 
+      onHide={() => setModalShow(false)} 
+      title="Forest themed layout"
+      spec1="React-Bootstrap"
+      spec2="CSS-Modules"
+      spec3="100mb"
+      spec4="React"
+      spec5="JavaScript"
+      spec6="1"
+      spec7="1"
+      spec8="2"/>
     </Container>
     </div>
   )

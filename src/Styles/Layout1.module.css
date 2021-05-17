@@ -28,10 +28,11 @@
   margin: 0px;
   margin-left: 15px;
   margin-top: 10px;
-  animation: fade-in-text 1s ease-in;
+  animation: fade-in 1s ease-in;
 }
 
-@keyframes fade-in-text {
+/* Animation for nav text fade in */
+@keyframes fade-in {
   0%{opacity: 0}
   100%{opacity: 1}
 }
@@ -55,6 +56,8 @@ html {
   height: 100vh;
   width:   100vw;
   position: relative; 
+  /* This animation can be removed on download, it causes the entire page to fade in */
+  animation: fade-in 1s ease-in;
 }
 
 .layout-body {
@@ -91,7 +94,7 @@ html {
   .footer-position{
     width: 90%;
   }
-  
+
 /* The button-styling below can be deleted on download */
   .button-styling {
     background-color: transparent !important;
