@@ -47,6 +47,31 @@
   font-size: 1.3em;
 }
 
+.modal-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.spec-li:before {
+  content: "-";
+}
+
+.modal-span {
+  font-weight: bolder;
+}
+
+.close-button {
+  justify-content: flex-end;
+}
+
+.dl-button {
+  justify-content: flex-start;
+}
+
+.modal-foot {
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 1300px) {
 
   .layout-p {
