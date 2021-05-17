@@ -37,7 +37,7 @@ function verticallyCenteredModal(props) {
               <li>NPM or another package manager</li>
               <li>create-react-app</li>
               <li>React-Bootstrap</li>
-              <li>Bootstrap</li>
+              <li>Bootstrap v4.6.0</li>
             </ul>
           </li>
           <li>Once downloaded add files to an existing project or start a new one from scratch</li>
@@ -48,8 +48,8 @@ function verticallyCenteredModal(props) {
         </ul>
       </Modal.Body>
       <Modal.Footer className="modal-foot">
-        <Button className="dl-button">Download</Button>
-        <Button className="close-button" onClick={props.onHide}>Close</Button>
+        <Button variant="dark" className="dl-button">Download</Button>
+        <Button variant="dark" className="close-button" onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
   );
