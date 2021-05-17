@@ -1,5 +1,4 @@
 /* Mobile Navbar stylings in order of elements on page*/
-
 .layout-1-nav {
   color: #FFF;
   background-color: rgba(0,0,0,0.3);
@@ -37,6 +36,7 @@
   100%{opacity: 1}
 }
 
+/* The button-styling below can be deleted on download */
 .button-styling {
   background-color: #FFF !important;
   color: #000;
@@ -46,6 +46,10 @@
 }
 
 /* Mobile body stylings in order of elements on page */
+html {
+  overflow: hidden;
+}
+
 .layout-background {
   background-image: url(./../img/Forest.jpg);
   height: 100vh;
@@ -74,10 +78,7 @@
   color: #FFF;
 }
 
-html {
-  overflow: hidden;
-}
-
+/* Styling for I-Pad sized tablets */
 @media only screen and (min-width: 768px){
   .layout-navs {
     margin-right: 25px;
@@ -92,6 +93,7 @@ html {
   }
 }
 
+/* The button-styling below can be deleted on download */
 .button-styling {
   background-color: transparent !important;
   color: #FFF;
@@ -101,6 +103,7 @@ html {
   font-size: 1em;
 }
 
+/* Styling for I-Pad pro sized tablets */
 @media only screen and (min-width: 1024px){
   .layout-heading{
     padding-top: 60%;
@@ -115,6 +118,7 @@ html {
     font-size: 1.5em;
   }
 
+/* The button-stylings below can be deleted on download */
   .button-styling {
     margin-left: 25px;
   }
@@ -124,6 +128,7 @@ html {
   }
 }
 
+/* Styling for small laptops */
 @media only screen and (min-width: 1200px) {
   .layout-background{
     background-image: url(./../img/desktop_forest.jpg);
@@ -156,6 +161,7 @@ html {
   }
 }
 
+/* Styling for large screens */
 @media only screen and (min-width: 1500px) {
   .layout-heading{
     padding-top: 25%;
