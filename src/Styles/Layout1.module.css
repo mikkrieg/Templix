@@ -37,7 +37,7 @@
   100%{opacity: 1}
 }
 
-/* The button-styling below can be deleted on download */
+/* The button and modal stylings below can be removed on download */
 .button-styling {
   background-color: #FFF !important;
   color: #000;
@@ -45,6 +45,12 @@
   margin-top: 10px;
   margin-left: 15px;
 }
+
+.modal-activate {
+  display: none;
+}
+
+
 
 /* Mobile body stylings in order of elements on page */
 html {
@@ -83,6 +89,7 @@ html {
 
 /* Styling for I-Pad sized tablets */
 @media only screen and (min-width: 768px){
+
   .layout-navs {
     margin-right: 25px;
   }
@@ -106,12 +113,10 @@ html {
   }
 }
 
-
-
 /* Styling for I-Pad pro sized tablets */
 @media only screen and (min-width: 1024px){
   .layout-heading{
-    padding-top: 60%;
+    padding-top: 40%;
     font-size: 7em;
   }
 
@@ -163,6 +168,30 @@ html {
 
   .navbar-style {
     margin-top: 2px;
+  }
+
+  /* can be removed on download (modal stylings) */
+  .modal-activate {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 12px;
+    text-align: center;
+    font-size: 1.8em;
+    background-color: transparent;
+    border: 4px solid #FFF;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    display: block;
+  }
+  /* can be removed on download (modal stylings)*/
+  .modal-activate:hover, .modal-activate:active, .modal-activate:focus {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    color: #000 !important;
+    border: 4px solid #FFF !important;
+    box-shadow: 0 0 0 0 !important;
   }
 }
 

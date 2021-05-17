@@ -34,7 +34,7 @@ export default function Layout1(props) {
         <footer className={styles['footer-position']}>&copy;2021</footer>
       </body>
       {/* The button and modal below can be removed on download */}
-      <Button onClick={() => {setModalShow(true)}}>Launch modal</Button>
+      <Button className={styles["modal-activate"]} onClick={() => {setModalShow(true)}}>?</Button>
       <Modal 
       show={modalShow} 
       onHide={() => setModalShow(false)} 
