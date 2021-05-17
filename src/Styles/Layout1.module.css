@@ -91,17 +91,19 @@ html {
   .footer-position{
     width: 90%;
   }
+  
+/* The button-styling below can be deleted on download */
+  .button-styling {
+    background-color: transparent !important;
+    color: #FFF;
+    border: none;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 1em;
+  }
 }
 
-/* The button-styling below can be deleted on download */
-.button-styling {
-  background-color: transparent !important;
-  color: #FFF;
-  border: none;
-  margin-top: 10px;
-  margin-left: 15px;
-  font-size: 1em;
-}
+
 
 /* Styling for I-Pad pro sized tablets */
 @media only screen and (min-width: 1024px){
