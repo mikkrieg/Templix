@@ -7,7 +7,7 @@
 }
 
 .layout-toggle {
-  margin-top: 15px;
+  margin-top: 10px;
   background-color: #FFF;
   justify-content: flex-end;
 }
@@ -35,6 +35,14 @@
 @keyframes fade-in-text {
   0%{opacity: 0}
   100%{opacity: 1}
+}
+
+.button-styling {
+  background-color: #FFF !important;
+  color: #000;
+  border: none;
+  margin-top: 10px;
+  margin-left: 15px;
 }
 
 /* Mobile body stylings in order of elements on page */
@@ -69,6 +77,7 @@
 html {
   overflow: hidden;
 }
+
 @media only screen and (min-width: 768px){
   .layout-navs {
     margin-right: 25px;
@@ -83,6 +92,15 @@ html {
   }
 }
 
+.button-styling {
+  background-color: transparent !important;
+  color: #FFF;
+  border: none;
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 1em;
+}
+
 @media only screen and (min-width: 1024px){
   .layout-heading{
     padding-top: 60%;
@@ -95,6 +113,14 @@ html {
 
   .layout-navs {
     font-size: 1.5em;
+  }
+
+  .button-styling {
+    margin-left: 25px;
+  }
+
+  .button-styling:hover {
+    color: #000;
   }
 }
 
