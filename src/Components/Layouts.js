@@ -36,15 +36,15 @@ export default function Layouts() {
     <div className='background background--color-map'>
       <Container className='layout-container'>
         <Row className='layout-info'>
-          <p className='layout-p'>When viewing a layout, select the<span className='mark'>'?'</span> for instructions and specifications</p>
-          <p className='layout-p'>Downloads are currently only available on Desktop</p>
+          <p className='layout-p'>When viewing a layout, select the<span className='mark'>?</span> in the bottom right corner for instructions and specifications</p>
+          <p className='layout-p mb-0'>Downloads are currently only available on Desktop</p>
         </Row>
         <Row className='mt-5 card-row'>
           <Col lg={4}>
             <Card onClick={() => handleCard1Click()} className='card-styles' id='card-1'>
               <Card.Img variant='top' src={layout1}/>
               <Card.Body>
-                <Card.Title>Layout 1</Card.Title>
+                <Card.Title className="card-titles">Woodland Layout</Card.Title>
                 <Card.Text className='card-text'>This is a layout styled with react-boostrap and css modules that provides a woodland theme.</Card.Text>
               </Card.Body>
             </Card>
@@ -53,7 +53,7 @@ export default function Layouts() {
           <Card onClick={() => handleCard2Click()} className='card-styles' id='card-2'>
               <Card.Img variant='top' src={logo}/>
               <Card.Body>
-                <Card.Title>Layout 2</Card.Title>
+                <Card.Title className="card-titles">Layout 2</Card.Title>
                 <Card.Text className='card-text'>lorem ipsum about this layout its completley random placeholder txt bruh</Card.Text>
               </Card.Body>
             </Card>
@@ -62,7 +62,7 @@ export default function Layouts() {
           <Card onClick={() => handleCard3Click()} className='card-styles' id='card-3'>
               <Card.Img variant='top' src={logo}/>
               <Card.Body>
-                <Card.Title>Layout 3</Card.Title>
+                <Card.Title className="card-titles">Layout 3</Card.Title>
                 <Card.Text className='card-text'>lorem ipsum about this layout its completley random placeholder txt bruh</Card.Text>
               </Card.Body>
             </Card>

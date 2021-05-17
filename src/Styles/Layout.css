@@ -15,6 +15,15 @@
   transition: all .2s ease-in-out;
 }
 
+.card-text {
+  font-size: 1.1em;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 .card-styles:hover {
   transform: scale(1.02);
 }
@@ -85,7 +94,8 @@
 @media only screen and (max-width: 1300px) {
 
   .layout-p {
-    margin-top: 3% !important;
+    margin-top: 2% !important;
+    margin-bottom: 0;
   }
 
   .card-row {
@@ -93,6 +103,6 @@
   }
 
   .card-text {
-    font-size: 1em;
+    font-size: 0.9em;
   } 
 }
