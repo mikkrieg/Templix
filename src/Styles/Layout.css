@@ -30,6 +30,7 @@
 
 .layout-info {
   animation: fade 1.5s ease-in;
+  display: block;
 }
 
 #card-1 {

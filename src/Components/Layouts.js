@@ -37,7 +37,7 @@ export default function Layouts() {
       <Container className='layout-container'>
         <Row className='layout-info'>
           <p className='layout-p'>When viewing a layout, select the<span className='mark'>?</span> in the bottom right corner for instructions and specifications</p>
-          <p className='layout-p mb-0'>Downloads are currently only available on Desktop</p>
+          <p className='layout-p'>Downloads are currently only available on Desktop</p>
         </Row>
         <Row className='mt-5 card-row'>
           <Col lg={4}>
