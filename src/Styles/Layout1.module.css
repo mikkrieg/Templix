@@ -57,16 +57,18 @@
 
 .footer-position {
   bottom: 2px;  
-  height: 40px;  
-  margin-top: 40px;  
-  text-align: center;  
-  vertical-align: middle; 
-  position: fixed;
+  height: 2.5rem;   
   width: 100%;
+  text-align: center;
+  display: block;
+  position: absolute;
   font-weight: bold;
   color: #FFF;
 }
 
+html {
+  overflow: hidden;
+}
 @media only screen and (min-width: 768px){
   .layout-navs {
     margin-right: 25px;
@@ -75,5 +77,74 @@
   .layout-heading{
     padding-top: 50%;
   }
+
+  .footer-position{
+    width: 90%;
+  }
 }
 
+@media only screen and (min-width: 1024px){
+  .layout-heading{
+    padding-top: 60%;
+    font-size: 7em;
+  }
+
+  .layout-1-nav {
+    padding-bottom: 25px;
+  }
+
+  .layout-navs {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .layout-background{
+    background-image: url(./../img/desktop_forest.jpg);
+    max-width: 100%;
+  }
+
+  .layout-heading{
+    padding-top: 20%;
+  }
+
+  .footer-position {
+    width: 87%;
+  }
+
+  .layout-1-nav {
+    padding-bottom: 10px;
+  }
+
+  .layout-navs {
+    font-size: 1.2em;
+    margin-top: 0;
+  }
+
+  .layout-navs:hover {
+    color: #000 !important;
+  }
+
+  .navbar-style {
+    margin-top: 2px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .layout-heading{
+    padding-top: 25%;
+  }
+
+  .layout-1-nav {
+    padding-bottom: 20px;
+  }
+
+  .layout-navs {
+    margin-top: 15px;
+    font-size: 1.5em;
+  }
+
+  .footer-position {
+    width: 67%;
+  }
+}
