@@ -8,13 +8,10 @@ import Layout1 from './Layout1';
 import Layout2 from './Layout2';
 import Layout3 from './Layout3';
 import { AppContext } from '../AppContext';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 
 export default function DisplayControl() {
   const { 
     aboutVisible,
-    setAnimation1,  
     layoutsVisible, 
     layout1,
     layout2,

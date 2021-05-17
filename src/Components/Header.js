@@ -69,7 +69,7 @@ function Header() {
               <Image onClick={() => handleHomeClick()} src={logo} className='logo' alt='Templix logo'/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
-          <Navbar.Collapse id='responsive-navbar-nav' id="collapse-div">
+          <Navbar.Collapse id='responsive-navbar-nav' className="collapse-div">
             <Nav id='nav-alignment'>
               <Nav.Link onClick={() => handleHomeClick()} className={homeVisible ? 'active' : animation1 ? "reduce" : ""}>Home</Nav.Link>
               <Nav.Link onClick={() => handleAboutClick()} className={aboutVisible ? 'active' : animation2 ? "reduce" : ""}>About</Nav.Link>
