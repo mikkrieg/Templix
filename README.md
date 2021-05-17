@@ -23,7 +23,7 @@ _The current plan for this website is to provide UI templates. The MVP is to hav
 
 ## Known Bugs
 
-* _None Yet_
+* _The woodland template is responsive but looks weird when the window is resized to uncommon screen sizes_
 
 ## License
 
