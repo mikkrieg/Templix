@@ -63,24 +63,23 @@ function Header() {
 
   return (
     <>
-    <Container>
-      <Navbar collapseOnSelect expand='md' fixed='top' id='navbar' className="navbar-dark">
-        <Navbar.Brand href='#'>
-            <Image onClick={() => handleHomeClick()} src={logo} className='logo' alt='Templix logo'/>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
-        <Navbar.Collapse id='responsive-navbar-nav' id="collapse-div">
-          <Nav id='nav-alignment'>
-            <Nav.Link onClick={() => handleHomeClick()} className={homeVisible ? 'active' : animation1 ? "reduce" : ""}>Home</Nav.Link>
-            <Nav.Link onClick={() => handleAboutClick()} className={aboutVisible ? 'active' : animation2 ? "reduce" : ""}>About</Nav.Link>
-            <Nav.Link onClick={() => handleLayoutsClick()} className={layoutsVisible ? 'active' : animation3 ? "reduce" : ""}>Layouts</Nav.Link>
-            <Nav.Link className='nav-link'>Sign up</Nav.Link>
-            <Nav.Link className='nav-link'>Login</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    </Container>
-      
+      <Container>
+        <Navbar collapseOnSelect expand='md' fixed='top' id='navbar' className="navbar-dark">
+          <Navbar.Brand href='#'>
+              <Image onClick={() => handleHomeClick()} src={logo} className='logo' alt='Templix logo'/>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
+          <Navbar.Collapse id='responsive-navbar-nav' id="collapse-div">
+            <Nav id='nav-alignment'>
+              <Nav.Link onClick={() => handleHomeClick()} className={homeVisible ? 'active' : animation1 ? "reduce" : ""}>Home</Nav.Link>
+              <Nav.Link onClick={() => handleAboutClick()} className={aboutVisible ? 'active' : animation2 ? "reduce" : ""}>About</Nav.Link>
+              <Nav.Link onClick={() => handleLayoutsClick()} className={layoutsVisible ? 'active' : animation3 ? "reduce" : ""}>Layouts</Nav.Link>
+              <Nav.Link className='nav-link'>Sign up</Nav.Link>
+              <Nav.Link className='nav-link'>Login</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </Container>
     </>
   )
 }

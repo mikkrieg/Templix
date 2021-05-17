@@ -1,8 +1,9 @@
-/* Navbar stylings in order of elements on page*/
+/* Mobile Navbar stylings in order of elements on page*/
 
 .layout-1-nav {
   color: #FFF;
-  position: fixed;
+  background-color: rgba(0,0,0,0.3);
+  padding-bottom: 10px;
 }
 
 .layout-toggle {
@@ -20,8 +21,23 @@
   color: #FFF  !important;
 }
 
+.navbar-style{
+  margin-top: 10px;
+}
 
-/* Body stylings in order of elements on page */
+.layout-navs{
+  margin: 0px;
+  margin-left: 15px;
+  margin-top: 10px;
+  animation: fade-in-text 1s ease-in;
+}
+
+@keyframes fade-in-text {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+
+/* Mobile body stylings in order of elements on page */
 .layout-background {
   background-image: url(./../img/Forest.jpg);
   height: 100vh;
@@ -35,8 +51,8 @@
 }
 
 .layout-heading {
-  margin-top: 40%;
   text-align: center;
+  padding-top: 70%;
 }
 
 .footer-position {
@@ -51,5 +67,13 @@
   color: #FFF;
 }
 
+@media only screen and (min-width: 768px){
+  .layout-navs {
+    margin-right: 25px;
+  }
 
+  .layout-heading{
+    padding-top: 50%;
+  }
+}
 
