@@ -8,6 +8,8 @@ import Layout1 from './Layout1';
 import Layout2 from './Layout2';
 import Layout3 from './Layout3';
 import { AppContext } from '../AppContext';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 
 export default function DisplayControl() {
   const { 
@@ -16,7 +18,14 @@ export default function DisplayControl() {
     layoutsVisible, 
     layout1,
     layout2,
-    layout3 } = useContext(AppContext);
+    layout3,
+    setLayoutsVisible, 
+    setLayout1 } = useContext(AppContext);
+
+    function handleBackClick() {
+      setLayoutsVisible(true);
+      setLayout1(false);
+    }
 
     let currentlyVisibleState = null;
     let headerVisible = null;
@@ -31,7 +40,7 @@ export default function DisplayControl() {
       headerVisible = <Header/>
       footerVisible = <Footer/>
     } else if(layout1 !== false) {
-      currentlyVisibleState = <Layout1 />
+      currentlyVisibleState = <Layout1 handleBackClick={handleBackClick}/>
     } else if(layout2 !== false) {
       currentlyVisibleState = <Layout2 />
     } else if(layout3 !== false) {
