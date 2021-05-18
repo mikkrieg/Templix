@@ -3,7 +3,6 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import './../Styles/Layout.css';
 
-
 function verticallyCenteredModal(props) {
   return(
     <Modal
@@ -36,8 +35,9 @@ function verticallyCenteredModal(props) {
             <ul>
               <li>NPM or another package manager</li>
               <li>create-react-app</li>
+              <li>React</li>
               <li>React-Bootstrap</li>
-              <li>Bootstrap v4.6.0</li>
+              <li>Bootstrap v4.6.0+</li>
             </ul>
           </li>
           <li>Once downloaded add files to an existing project or start a new one from scratch</li>
