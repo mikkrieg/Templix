@@ -11,9 +11,9 @@ body {
   text-align: center;
 }
 
-.lower {
-  margin-top: 8%;
-}
+// .lower {
+//   margin-top: 3%;
+// }
 
 .border-div {
   border-bottom: 2px solid #000;
@@ -55,7 +55,7 @@ body {
 
 @keyframes p1Slide {
   0% {margin-top: 100%;}
-  100% {margin-top: 8%;}
+  100% {margin-top: 0%;}
 }
 
 @keyframes d1Slide {
