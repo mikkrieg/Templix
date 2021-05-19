@@ -54,7 +54,7 @@ export default function Layouts() {
               <Card.Img variant='top' src={logo}/>
               <Card.Body>
                 <Card.Title className="card-titles">Layout 2</Card.Title>
-                <Card.Text className='card-text'>lorem ipsum about this layout its completley random placeholder txt bruh</Card.Text>
+                <Card.Text className='card-text'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -63,7 +63,7 @@ export default function Layouts() {
               <Card.Img variant='top' src={logo}/>
               <Card.Body>
                 <Card.Title className="card-titles">Layout 3</Card.Title>
-                <Card.Text className='card-text'>lorem ipsum about this layout its completley random placeholder txt bruh</Card.Text>
+                <Card.Text className='card-text'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</Card.Text>
               </Card.Body>
             </Card>
           </Col>
