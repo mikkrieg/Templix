@@ -17,7 +17,7 @@ function verticallyCenteredModal(props) {
           zip.file("Layout1.js", xhr.response);
           zip.generateAsync({type:"blob"})
           .then(function(content){
-            saveAs(content, "Layout1.zip");
+            saveAs(content, "Woodland.zip");
           });
         }
       }
