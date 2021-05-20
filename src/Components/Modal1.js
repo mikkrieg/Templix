@@ -1,9 +1,29 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import JSZip from 'jszip';
+import saveAs from 'file-saver';
 import './../Styles/Layout.css';
 
 function verticallyCenteredModal(props) {
+  function packLayout() {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'Layout1.js', true);
+    xhr.responseType = "arraybuffer";
+    xhr.onreadystatechange = function(e) {
+      if(xhr.readyState === 4) {
+        if(xhr.status === 200) {
+          let zip = new JSZip();
+          zip.file("Layout1.js", xhr.response);
+          zip.generateAsync({type:"blob"})
+          .then(function(content){
+            saveAs(content, "Layout1.zip");
+          });
+        }
+      }
+    }
+    xhr.send();
+  }
   return(
     <Modal
     {...props}
@@ -48,7 +68,7 @@ function verticallyCenteredModal(props) {
         </ul>
       </Modal.Body>
       <Modal.Footer className="modal-foot">
-        <Button variant="dark" className="dl-button">Download</Button>
+        <Button variant="dark" className="dl-button" onClick={() => packLayout()}>Download</Button>
         <Button variant="dark" className="close-button" onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
@@ -56,3 +76,14 @@ function verticallyCenteredModal(props) {
 }
 
 export default verticallyCenteredModal;
+
+// const zip = new JSZip();
+// let docs = zip.folder('Layout1');
+// docs.file('./Layout1.js');
+// docs.file('./../img/Forest.jpg');
+// docs.file('./../img/desktop_forest.jpg');
+// docs.file('./../Styles/Layout1.module.css');
+// zip.generateAsync({type:"blob"})
+//   .then(function(content){
+//     saveAs(content, "Layout1.zip");
+//   });
