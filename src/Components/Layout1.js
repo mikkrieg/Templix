@@ -41,7 +41,7 @@ export default function Layout1(props) {
       title="Forest themed layout"
       spec1="React-Bootstrap"
       spec2="CSS-Modules"
-      spec3="100tb"
+      spec3="15mb"
       spec4="React"
       spec5="JavaScript"
       spec6="1"
