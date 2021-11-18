@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import Home from './Home';
-import About from './About';
 import Header from './Header';
 import Footer from './Footer';
 import Layouts from './Layouts';
@@ -11,7 +10,6 @@ import { AppContext } from '../AppContext';
 
 export default function DisplayControl() {
   const { 
-    aboutVisible,
     layoutsVisible, 
     layout1,
     layout2,
@@ -32,11 +30,7 @@ export default function DisplayControl() {
     let headerVisible = null;
     let footerVisible = null;
     
-    if(aboutVisible !== false) {
-      currentlyVisibleState = <About/>
-      headerVisible = <Header/>
-      footerVisible = <Footer/>
-    } else if(layoutsVisible !== false) {
+    if(layoutsVisible !== false) {
       currentlyVisibleState = <Layouts />
       headerVisible = <Header/>
       footerVisible = <Footer/>

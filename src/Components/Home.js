@@ -6,13 +6,12 @@ import './../Styles/Home.scss';
 import {AppContext} from './../AppContext';
 
 export default function Home() {
-  const {layoutsVisible, setLayoutsVisible, setHomeVisible, setAboutVisible} = useContext(AppContext);
+  const {layoutsVisible, setLayoutsVisible, setHomeVisible} = useContext(AppContext);
   
   function handleLayoutsClick() {
     if(layoutsVisible === false) {
       setLayoutsVisible(true);
       setHomeVisible(false)
-      setAboutVisible(false)
     }
   }
 

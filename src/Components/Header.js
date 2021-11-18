@@ -9,9 +9,7 @@ import {AppContext} from './../AppContext';
 import './../Styles/Header.css';
 
 function Header() {
-  const {
-    aboutVisible, 
-    setAboutVisible, 
+  const { 
     homeVisible, 
     setHomeVisible, 
     layoutsVisible, 
@@ -26,23 +24,9 @@ function Header() {
     setLayout2,
     setLayout3 } = useContext(AppContext)
 
-  function handleAboutClick() {
-    if(aboutVisible === false){
-      setAboutVisible(true);
-      setHomeVisible(false)
-      setLayoutsVisible(false)
-      setAnimation2(true);
-      setAnimation1(true);
-      setLayout1(false)
-      setLayout2(false)
-      setLayout3(false)
-    }
-  }
-
   function handleHomeClick() {
     if(homeVisible !== true) {
       setHomeVisible(true);
-      setAboutVisible(false)
       setLayoutsVisible(false)
       setAnimation1(true);
       setLayout1(false)
@@ -55,7 +39,6 @@ function Header() {
     if(layoutsVisible === false) {
       setLayoutsVisible(true);
       setHomeVisible(false)
-      setAboutVisible(false)
       setAnimation3(true);
       setAnimation1(true);
     }
@@ -65,17 +48,14 @@ function Header() {
     <>
       <Container>
         <Navbar collapseOnSelect expand='md' fixed='top' id='navbar' className="navbar-dark">
-          <Navbar.Brand href='#'>
+          <Navbar.Brand href='/'>
               <Image onClick={() => handleHomeClick()} src={logo} className='logo' alt='Templix logo'/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
           <Navbar.Collapse id='responsive-navbar-nav' className="collapse-div">
             <Nav id='nav-alignment'>
               <Nav.Link onClick={() => handleHomeClick()} className={homeVisible ? 'active' : animation1 ? "reduce" : ""}>Home</Nav.Link>
-              <Nav.Link onClick={() => handleAboutClick()} className={aboutVisible ? 'active' : animation2 ? "reduce" : ""}>About</Nav.Link>
               <Nav.Link onClick={() => handleLayoutsClick()} className={layoutsVisible ? 'active' : animation3 ? "reduce" : ""}>Layouts</Nav.Link>
-              <Nav.Link className='nav-link'>Sign up</Nav.Link>
-              <Nav.Link className='nav-link'>Login</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

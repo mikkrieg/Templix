@@ -3,7 +3,6 @@ import React, { useState } from "react";
 export const AppContext = React.createContext();
 
 export const AppProvider = ({children}) => {
-    const [aboutVisible, setAboutVisible] = useState(false);
     const [layoutsVisible, setLayoutsVisible] = useState(false);
     const [homeVisible, setHomeVisible] = useState(true);
     const [layout1, setLayout1] = useState(false);
@@ -24,8 +23,6 @@ export const AppProvider = ({children}) => {
       setAnimation2,
       animation3,
       setAnimation3,
-      aboutVisible,
-      setAboutVisible,
       layoutsVisible,
       setLayoutsVisible,
       homeVisible,

@@ -4,18 +4,24 @@
 .logo {
   width: 100%;
   height: auto;
-  max-width: 275px;
+  max-width: 280px;
+  margin-left: 80px;
 }
 
 /* For nav links */
 .nav-link {
-  color: #FFF !important;
-  font-size: 1.2em;
+  color: #000 !important;
+  font-weight: bold;
+  font-size: 1.4em;
   margin: 10px;
 }
 
+#nav-alignment {
+  margin-right: 8%;
+}
+
 .nav-link:hover {
-  color: #989898 !important;
+  color: #535353 !important;
 }
 
 .navbar-toggler {
@@ -26,7 +32,7 @@
 
 /* For navbar */
 #navbar {
-  background-color: #1A1A1A;
+  background-color: transparent;
   position: fixed;
 }
 
